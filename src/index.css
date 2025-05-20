@@ -5,5 +5,48 @@
 }
 
 body {
-  background-color: dimgray !important;
+  background-image: url(stones.jpg) !important;
+  background: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem !important;
+
+  .container {
+    background-color: rgba(46, 203, 255, 0.271);
+    padding: 2rem;
+    width: 500px;
+    border-radius: 0.3rem;
+
+    .showBtn {
+      background-color: orange;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1000px !important;
+
+    .showBtn {
+      width: 100%;
+      font-size: 2rem;
+    }
+
+    .formInput {
+      font-size: 2rem;
+    }
+  }
+}
+
+.draw {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+}
+
+.undraw {
+  font-size: 1.5rem;
 }

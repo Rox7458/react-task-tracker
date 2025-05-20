@@ -1,17 +1,10 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
+import TaskCard from "./TaskCard";
 
 const FormList = ({ data, setData }) => {
   return (
-    <div>
+    <div className="mt-3">
       {data.map((d) => (
-        <Card>
-          <Card.Body>
-            <Card.Title>{d.task}</Card.Title>
-            <Card.Text>{d.day}</Card.Text>
-          </Card.Body>
-        </Card>
+        <TaskCard key={d.id} d={d} data={data} setData={setData} />
       ))}
     </div>
   );
